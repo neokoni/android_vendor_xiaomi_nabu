@@ -246,6 +246,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/nabu/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    libldacBT_abr \
+    libldacBT_enc \
+    liblhdc \
+    liblhdcBT_enc \
+    liblhdcv5 \
+    liblhdcv5BT_enc \
     vendor.xiaomi.hardware.displayfeature@1.0-system \
     btaudio_offload_if \
     eglSubDriverAndroid \

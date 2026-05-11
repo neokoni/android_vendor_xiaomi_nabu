@@ -14,6 +14,226 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libldacBT_abr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libldacBT_abr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libldacBT_abr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libldacBT_enc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libldacBT_enc.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libldacBT_enc.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblhdc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/liblhdc.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/liblhdc.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblhdcBT_enc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/liblhdcBT_enc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "liblhdc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/liblhdcBT_enc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "liblhdc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblhdcv5",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/liblhdcv5.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/liblhdcv5.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblhdcv5BT_enc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/liblhdcv5BT_enc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "liblhdcv5",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/liblhdcv5BT_enc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "liblhdcv5",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.displayfeature@1.0-system",
     stem: "vendor.xiaomi.hardware.displayfeature@1.0",
     owner: "xiaomi",
