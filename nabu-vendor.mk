@@ -6,8 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/nabu
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/nabu/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_ETC)/permissions/privapp-permissions-qti.xml \
-    vendor/xiaomi/nabu/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_ETC)/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/nabu/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/xiaomi/nabu/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/nabu/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/nabu/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/nabu/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -308,6 +308,7 @@ PRODUCT_PACKAGES += \
     libadpcmdec \
     libaudcal \
     libaudio_log_utils \
+    libaudiocloudctrl \
     libaudioconfigstore \
     libaudioparsers \
     libaudioroute_ext \
@@ -418,7 +419,6 @@ PRODUCT_PACKAGES += \
     libGPreqcancel \
     libGPreqcancel_svc \
     libHalSuperSensorServer \
-    libMegviiFacepp-0.5.2 \
     libQSEEComAPI \
     libQTEEConnector_vendor \
     libSNPE \
@@ -488,7 +488,6 @@ PRODUCT_PACKAGES += \
     libkeymasterutils \
     libmdmdetect \
     libmdmimgload \
-    libmegface \
     libmi_supernight_raw \
     libmi_supernight_raw_checker \
     libmiai_portraitsupernight \
